@@ -37,10 +37,21 @@ $imgur = new Imgur($credentials);
 
 $yourAccountCredits = $imgur->account()->credits();
 
-// random account username
-$username = 'test';
-
 $accountImages = $imgur->account()->images($username);
+
+$myAccountImages = $imgur->account()->images();
+
+$imageInfo = $imgur->image()->info($imageHash);
+
+$albumInfo = $imgur->album()->info($albumHash);
 ```
 
-Make sure to check out: https://apidocs.imgur.com/
+To know more about available methods check out the classes in src/Api folder.
+
+The method `$imgur->account()` returns an Account object and other methods return their related object as well [image, album..]
+
+Make sure to check out: [Imgur Api Documentation](https://apidocs.imgur.com/)
+
+## License
+
+melsaka/imgur is open-sourced library licensed under the [MIT license](LICENSE.md).
