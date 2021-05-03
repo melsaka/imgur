@@ -5,11 +5,11 @@ require __DIR__ . '/vendor/autoload.php';
 use Melsaka\Imgur;
 
 $credentials = [
-    'username' 			=> '{{ your username }}',
-    'client_id' 		=> '{{ your client_id }}',
-    'client_secret' 	=> '{{ your client_secret }}',
-    'access_token' 		=> '{{ your access_token }}',
-    'refresh_token' 	=> '{{ your refresh_token }}',
+    'username'          => '{{ your username }}',
+    'client_id'         => '{{ your client_id }}',
+    'client_secret'     => '{{ your client_secret }}',
+    'access_token'      => '{{ your access_token }}',
+    'refresh_token'     => '{{ your refresh_token }}',
 ];
 
 $imgur = new Imgur($credentials);
