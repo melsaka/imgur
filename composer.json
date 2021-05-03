@@ -1,0 +1,21 @@
+{
+    "name": "melsaka/imgur",
+    "description": "A PHP client for the Imgur API. It can be used to interact with the Imgur API in your projects.",
+    "keywords": ["imgur", "api"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mohamed ElSaka",
+            "email": "melsakax@gmail.com",
+            "homepage": "https://github.com/melsaka"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"Melsaka\\": "src/"}
+    },
+    "require": {
+        "php": "^7.4",
+        "ext-curl": "*"
+    }
+}
