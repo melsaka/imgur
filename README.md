@@ -4,17 +4,20 @@ This is an Object Oriented PHP client for the Imgur API. It can be used to inter
 
 ### Before Installation
 
-You must have an app on imgur to use this package and make sure to obtain account: `username, client_id, client_secret, access_token, refresh_token`.
+You must have an app on imgur to use this package and make sure to obtain account: 
+`username, client_id, client_secret, access_token, refresh_token`.
 
 If you have an application but you don't know how to get your `access_token` and `refresh_token` do the following:
 
-Go to this url `https://api.imgur.com/oauth2/authorize?client_id=CLIENT_ID&response_type=token` after changing `CLIENT_ID` with yours.
+Go to this url `https://api.imgur.com/oauth2/authorize?client_id=CLIENT_ID&response_type=token` 
+after changing `CLIENT_ID` with yours.
 
 You should now be redirected to imgur asking you for permission, click on `Allow` button.
 
-Then you will be redirected to imgur homepage and the url should contain info about your `access_token`, `refresh_token` and your `account_username`.
+Then you will be redirected to imgur homepage and the url should contain info about 
+your `access_token`, `refresh_token` and your `account_username`.
 
-**Note:** Imgur upload limit is 50 images per hour, and there is no upload limit per account, so upload to your heart's desire!
+**Note:** Imgur upload limit is 50 images per hour, and there is no upload limit per account.
 
 For more info: [What files can I upload? What is the size limit?](https://help.imgur.com/hc/en-us/articles/115000083326-What-files-can-I-upload-What-is-the-size-limit-) 
 
