@@ -119,6 +119,7 @@ class Gallery
         return $this->get();
     }
 
+    // Share an Image to the Gallery.
     public function imageShare($imageHash, $data)
     {
         $this->setEndpoint(Endpoint::GALLEREY_IMAGE);
@@ -128,6 +129,7 @@ class Gallery
         return $this->post($data);
     }
 
+    // Share an Album to the Gallery.
     public function albumShare($albumHash, $data)
     {
         $this->setEndpoint(Endpoint::GALLEREY_ALBUM);
@@ -157,7 +159,7 @@ class Gallery
         return $this->get();
     }
 
-    // Get additional information about an album in the gallery.
+    // Get additional information about an image in the gallery.
     public function image($imageHash)
     {
         $this->setEndpoint(Endpoint::GALLEREY_IMAGE);
@@ -178,7 +180,7 @@ class Gallery
     }
 
     // Get the vote information about an image.
-    public function vote($galleryHash)
+    public function voteInfo($galleryHash)
     {
         $this->setEndpoint(Endpoint::GALLEREY_ALBUM_IMAGE_VOTE);
         
@@ -212,7 +214,7 @@ class Gallery
     }
 
     // Information about a specific comment.
-    public function comments($galleryHash, $commentId)
+    public function comment($galleryHash, $commentId)
     {
         $this->setEndpoint(Endpoint::GALLEREY_ALBUM_IMAGE_COMMENT);
         

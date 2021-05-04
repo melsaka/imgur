@@ -46,7 +46,7 @@ class Comment
         return $this->delete();
     }
 
-    // Get the comment with all of the replies for the comment.
+    // Create a reply for the given comment.
     public function createReply($commentId, $data)
     {
         $this->setEndpoint(Endpoint::COMMENT);
