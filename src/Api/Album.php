@@ -59,7 +59,7 @@ class Album
     }
 
     // Delete an album with a given ID.
-    public function delete($albumHash)
+    public function remove($albumHash)
     {
         $this->setEndpoint(Endpoint::ALBUM);
         

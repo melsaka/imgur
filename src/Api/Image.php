@@ -37,7 +37,7 @@ class Image
     }
 
     // Deletes an image.
-    public function delete($imageHash)
+    public function remove($imageHash)
     {
         $this->setEndpoint(Endpoint::IMAGE);
 

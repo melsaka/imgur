@@ -49,8 +49,8 @@ class Endpoint
     const COMMENT_REPORT = 'https://api.imgur.com/3/comment/{commentId}/report';
 
     // IMAGE ENDPOINT
+    const IMAGE_UPLOAD = 'https://api.imgur.com/3/image';
     const IMAGE = 'https://api.imgur.com/3/image/{imageHash}';
-    const IMAGE_UPLOAD = 'https://api.imgur.com/3/upload';
     const IMAGE_FAVORITE = 'https://api.imgur.com/3/image/{imageHash}/favorite';
  
     // ALBUM ENDPOINT

@@ -27,7 +27,7 @@ class Comment
     }
 
     // Delete a comment by the given id.
-    public function delete($commentId)
+    public function remove($commentId)
     {
         $this->setEndpoint(Endpoint::COMMENT);
 
